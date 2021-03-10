@@ -1,0 +1,8 @@
+module adder(input a,b,ci,output co,si);
+  wire x,y,z;
+  xor X1(x,a,b);
+  and A1(y,a,b);
+  and A2(z,x,ci);
+  or O1(co,y,z);
+  xor X2(si,x,ci);
+endmodule

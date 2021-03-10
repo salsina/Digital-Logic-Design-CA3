@@ -1,0 +1,5 @@
+module eq(input a,b,eq,output EQ);
+  wire w;
+  xnor X(w,a,b);
+  and A(EQ,w,eq);
+endmodule
